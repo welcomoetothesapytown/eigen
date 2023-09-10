@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eigen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Eigen</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="keyword">Topic:</label>
+                <input type="text" class="form-control" id="keyword" name="keyword" required>
+            </div>
+            <div class="form-group">
+                <label for="user_input">User Input:</label>
+                <textarea class="form-control" id="user_input" name="user_input" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Test your Understanding</button>
+        </form>
+        {% if score %}
+            <div class="mt-4">
+                <h2><small>You're Score : </small> {{ score }} %</h2>
+            </div>
+        {% endif %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
